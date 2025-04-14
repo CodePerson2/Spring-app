@@ -3,6 +3,7 @@ package com.app.exifApp.service.Impl;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.app.exifApp.service.ExifService;
@@ -11,6 +12,7 @@ import com.drew.metadata.Directory;
 import com.drew.metadata.Metadata;
 import com.drew.metadata.Tag;
 
+@Service
 public class ExifServiceImpl implements ExifService {
 
     @Override
