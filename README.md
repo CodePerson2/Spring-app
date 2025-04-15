@@ -24,20 +24,7 @@ A lightweight **Spring Boot + Svelte** app that lets users upload a JPEG photo a
 
 ## 📦 Build & Run Instructions
 
-### 🧰 Build Spring Boot App
-
-```bash
-# Compile and package the app
-mvn clean package
-```
-# 🐳 Build & Run Docker Container
-
-```bash
-docker build -t spring-app .
-docker run -p 8080:8080 spring-app
-```
-
-# 🎨 Build Svelte Frontend
+### 🎨 Build Svelte Frontend
 
 ```bash
 cd svelte-frontend
@@ -46,6 +33,19 @@ npm run build
 
 # Copy static files into Spring Boot resources
 cp -r dist/* ../src/main/resources/static/
+```
+
+### 🧰 Build Spring Boot App
+
+```bash
+# Compile and package the app
+mvn clean package
+```
+### 🐳 Build & Run Docker Container
+
+```bash
+docker build -t spring-app .
+docker run -p 8080:8080 spring-app
 ```
 
 # 🌐 Usage
