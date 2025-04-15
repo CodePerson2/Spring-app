@@ -56,8 +56,8 @@ cp -r dist/* ../src/main/resources/static/
 
 - View:
 
-- - ✅ Your uploaded photo
+    - ✅ Your uploaded photo
 
-- - 🌍 A map if GPS EXIF data is found
+    - 🌍 A map if GPS EXIF data is found
 
-- - 🧾 All EXIF metadata in a clean table
+    - 🧾 All EXIF metadata in a clean table
