@@ -50,4 +50,14 @@ cp -r dist/* ../src/main/resources/static/
 
 # 🌐 Usage
 
-Go to http://localhost:8080
+- Go to http://localhost:8080
+
+- Upload a .jpg or .jpeg file
+
+- View:
+
+- - ✅ Your uploaded photo
+
+- - 🌍 A map if GPS EXIF data is found
+
+- - 🧾 All EXIF metadata in a clean table
