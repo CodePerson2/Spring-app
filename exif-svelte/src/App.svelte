@@ -34,6 +34,10 @@
   }
 </script>
 
+<header>
+  <h1>Secure Photo Metadata Reader</h1>
+</header>
+
 <UploadForm on:uploaded={handleUploaded} />
 
 {#if imageUrl}
@@ -41,15 +45,32 @@
 {/if}
 
 {#if exifData}
-  <ExifDisplay {exifData} />
-  {#if getGPSFromExif(exifData)}
+{#if getGPSFromExif(exifData)}
     <Map lat={getGPSFromExif(exifData).lat} lon={getGPSFromExif(exifData).lon} />
   {/if}
+  <ExifDisplay {exifData} />
+
 {/if}
+
+<footer>
+  <p>&copy; 2025 Secure Photo Metadata Reader</p>
+</footer>
 
 <style>
   :global(body) {
     font-family: sans-serif;
     margin: 2rem;
+    background-color: #f5f5f5;
+  }
+  header {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  footer {
+    margin-top: 4rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #777;
   }
 </style>
